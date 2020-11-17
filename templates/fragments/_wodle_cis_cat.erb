@@ -18,8 +18,8 @@
   <% if @wodle_ciscat_ciscat_path -%>
   <ciscat_path><%= @wodle_ciscat_ciscat_path %></ciscat_path>
   <%- end -%>
-
-  <%- if not @wodle_openscap_content.nil? -%>
+  
+  <%- if not @wodle_ciscat_content.nil? -%>
   <%- @wodle_ciscat_content.each do |path, value| -%>
   <content type="<%= value['type'] %>" path="<%= path %>">
     <%- if value['profiles'] then -%>
